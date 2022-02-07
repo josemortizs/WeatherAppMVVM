@@ -14,6 +14,7 @@
 		DBE27B7F27B1AF01000DA6B5 /* WeatherAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B7E27B1AF01000DA6B5 /* WeatherAppMVVMTests.swift */; };
 		DBE27B8927B1AF01000DA6B5 /* WeatherAppMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B8827B1AF01000DA6B5 /* WeatherAppMVVMUITests.swift */; };
 		DBE27B8B27B1AF01000DA6B5 /* WeatherAppMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B8A27B1AF01000DA6B5 /* WeatherAppMVVMUITestsLaunchTests.swift */; };
+		DBE27B9D27B1B694000DA6B5 /* WeatherResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B9C27B1B694000DA6B5 /* WeatherResponseDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DBE27B8427B1AF01000DA6B5 /* WeatherAppMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE27B8827B1AF01000DA6B5 /* WeatherAppMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppMVVMUITests.swift; sourceTree = "<group>"; };
 		DBE27B8A27B1AF01000DA6B5 /* WeatherAppMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBE27B9C27B1B694000DA6B5 /* WeatherResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		DBE27B6C27B1AF00000DA6B5 /* WeatherAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DBE27B9727B1B600000DA6B5 /* DataModules */,
 				DBE27B6D27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift */,
 				DBE27B6F27B1AF00000DA6B5 /* ContentView.swift */,
 				DBE27B7127B1AF00000DA6B5 /* Assets.xcassets */,
@@ -125,6 +128,38 @@
 				DBE27B8A27B1AF01000DA6B5 /* WeatherAppMVVMUITestsLaunchTests.swift */,
 			);
 			path = WeatherAppMVVMUITests;
+			sourceTree = "<group>";
+		};
+		DBE27B9727B1B600000DA6B5 /* DataModules */ = {
+			isa = PBXGroup;
+			children = (
+				DBE27B9A27B1B657000DA6B5 /* Model */,
+				DBE27B9827B1B621000DA6B5 /* API */,
+			);
+			path = DataModules;
+			sourceTree = "<group>";
+		};
+		DBE27B9827B1B621000DA6B5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DBE27B9A27B1B657000DA6B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBE27B9B27B1B668000DA6B5 /* Weather */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE27B9B27B1B668000DA6B5 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DBE27B9C27B1B694000DA6B5 /* WeatherResponseDataModel.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,7 @@
 			files = (
 				DBE27B7027B1AF00000DA6B5 /* ContentView.swift in Sources */,
 				DBE27B6E27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift in Sources */,
+				DBE27B9D27B1B694000DA6B5 /* WeatherResponseDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
