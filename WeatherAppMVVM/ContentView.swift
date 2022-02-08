@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var weatherViewModel = WeatherViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(weatherViewModel.weatherResponseDataModel?.city ?? "")
             .padding()
+            .task {
+                await weatherViewModel.getWeather(city: "Berja")
+            }
     }
 }
 

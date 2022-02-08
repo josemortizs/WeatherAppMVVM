@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB7770FB27B31BDF0013955C /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7770FA27B31BDF0013955C /* WeatherViewModel.swift */; };
+		DB77710027B31D010013955C /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7770FF27B31D010013955C /* CONSTANTS.swift */; };
+		DB77710327B323970013955C /* WheatherErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77710227B323970013955C /* WheatherErrorHandling.swift */; };
 		DBE27B6E27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B6D27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift */; };
 		DBE27B7027B1AF00000DA6B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27B6F27B1AF00000DA6B5 /* ContentView.swift */; };
 		DBE27B7227B1AF00000DA6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE27B7127B1AF00000DA6B5 /* Assets.xcassets */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB7770FA27B31BDF0013955C /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		DB7770FF27B31D010013955C /* CONSTANTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONSTANTS.swift; sourceTree = "<group>"; };
+		DB77710127B321340013955C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB77710227B323970013955C /* WheatherErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherErrorHandling.swift; sourceTree = "<group>"; };
 		DBE27B6A27B1AF00000DA6B5 /* WeatherAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE27B6D27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppMVVMApp.swift; sourceTree = "<group>"; };
 		DBE27B6F27B1AF00000DA6B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB7770F827B31BBF0013955C /* UserCases */ = {
+			isa = PBXGroup;
+			children = (
+				DB7770F927B31BC90013955C /* Weather */,
+			);
+			path = UserCases;
+			sourceTree = "<group>";
+		};
+		DB7770F927B31BC90013955C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DB7770FA27B31BDF0013955C /* WeatherViewModel.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		DB7770FC27B31C190013955C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DB77710227B323970013955C /* WheatherErrorHandling.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		DBE27B6127B1AF00000DA6B5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +127,14 @@
 		DBE27B6C27B1AF00000DA6B5 /* WeatherAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DB77710127B321340013955C /* Info.plist */,
+				DB7770F827B31BBF0013955C /* UserCases */,
 				DBE27B9727B1B600000DA6B5 /* DataModules */,
 				DBE27B6D27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift */,
 				DBE27B6F27B1AF00000DA6B5 /* ContentView.swift */,
 				DBE27B7127B1AF00000DA6B5 /* Assets.xcassets */,
 				DBE27B7327B1AF00000DA6B5 /* Preview Content */,
+				DB7770FF27B31D010013955C /* CONSTANTS.swift */,
 			);
 			path = WeatherAppMVVM;
 			sourceTree = "<group>";
@@ -142,6 +176,7 @@
 		DBE27B9827B1B621000DA6B5 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				DB7770FC27B31C190013955C /* Weather */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -292,7 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB77710327B323970013955C /* WheatherErrorHandling.swift in Sources */,
 				DBE27B7027B1AF00000DA6B5 /* ContentView.swift in Sources */,
+				DB77710027B31D010013955C /* CONSTANTS.swift in Sources */,
+				DB7770FB27B31BDF0013955C /* WeatherViewModel.swift in Sources */,
 				DBE27B6E27B1AF00000DA6B5 /* WeatherAppMVVMApp.swift in Sources */,
 				DBE27B9D27B1B694000DA6B5 /* WeatherResponseDataModel.swift in Sources */,
 			);
@@ -458,6 +496,7 @@
 				DEVELOPMENT_TEAM = 348MZJ2SHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAppMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +526,7 @@
 				DEVELOPMENT_TEAM = 348MZJ2SHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAppMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

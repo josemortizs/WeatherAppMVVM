@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F04BAA7F-CB62-4014-82B3-618BCC6B0CAC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29978915-55A8-4D1F-B927-8A1C8208B3F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherAppMVVM/DataModules/API/Weather/WheatherRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getWeather(city:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29978915-55A8-4D1F-B927-8A1C8208B3F1 - b63eae3c03dd223a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for WeatherAppMVVM.WeatherRepository.getWeather(city: Swift.String) async -&gt; (Swift.Optional&lt;WeatherAppMVVM.WeatherResponseDataModel&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "WeatherAppMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemanuelortizsanchez/Documents/Desarrollo/Proyectos/SwiftUI/WeatherApp/WeatherAppMVVM/WeatherAppMVVM/DataModules/API/Weather/WheatherRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "29978915-55A8-4D1F-B927-8A1C8208B3F1 - 9c9b2717fae341bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WeatherAppMVVM.WeatherRepository.getWeather(city: Swift.String) async -&gt; (Swift.Optional&lt;WeatherAppMVVM.WeatherResponseDataModel&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "WeatherAppMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josemanuelortizsanchez/Documents/Desarrollo/Proyectos/SwiftUI/WeatherApp/WeatherAppMVVM/WeatherAppMVVM/DataModules/API/Weather/WheatherRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
