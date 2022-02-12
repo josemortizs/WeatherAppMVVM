@@ -15,7 +15,8 @@ struct ContentView: View {
         Text(weatherViewModel.weatherResponseDataModel?.city ?? "")
             .padding()
             .task {
-                await weatherViewModel.getWeather(city: "Berja")
+                //await weatherViewModel.getWeather(city: "Berja")
+                await weatherViewModel.getWeatherAsync(city: "Berja")
             }
     }
 }
